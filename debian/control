@@ -1,0 +1,8 @@
+Source: elasticsearch-hq
+Maintainer: Vincent Bernat <bernat@debian.org>
+Build-Depends: debhelper (>= 9),
+               wget, ca-certificates, lsb-release
+
+Package: elasticsearch-hq
+Architecture: any
+Description: Elasticsearch HQ monitoring and management webapp
