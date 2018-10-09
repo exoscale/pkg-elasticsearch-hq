@@ -2,7 +2,7 @@
 
 # Increase the "1" below on each hash change
 EPOCH = 1
-VERSION = 0.$(EPOCH)+$(shell echo $(HASH) | cut -b 1-12)
+VERSION = 0.$(EPOCH)+$(shell date +%Y%m%d-%H%M%S)
 HASH = eb117d45f91ef91eea6292ebc1a99529c2942aca
 DISTRIBUTION = $(shell lsb_release -sc)
 PACKAGEVERSION = $(VERSION)-0~$(DISTRIBUTION)0+exo1
